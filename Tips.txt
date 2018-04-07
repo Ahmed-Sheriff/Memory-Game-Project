@@ -1,0 +1,19 @@
+Memory game functionality steps :
+
+1- Defining all cards , restart and remove elements  [done] .
+
+2- Put all cards in array (list) 
+
+3- Loop through the cards list 
+
+4- Make click event listeners to all cards 
+
+5- Flip the card when its clicked and make it opens untill another click happen to another card 
+
+6- If another card is clicked 
+
+7- check if two cards are matches 
+
+8- If they are matched , make them permanantly opened
+
+9- increment counter by one if there are two clicks happend on two cards   
