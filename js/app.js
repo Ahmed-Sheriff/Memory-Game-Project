@@ -173,7 +173,7 @@ function rating(){
 if(movesNum === 3){
 
  starsArr.pop();
- debugger;
+  
 stars.innerHTML = starsArr;
 
   }
