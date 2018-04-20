@@ -4,7 +4,7 @@
 
 * [Instructions](#instructions)
 * [Contributing](#contributing)
-* [How to play] (#How to play)
+* [Howtoplay] (#How to play)
 
 ## Instructions
 
