@@ -1,0 +1,200 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+body {
+    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    font-family: 'Coda', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    width: 345px;
+    max-width: 90%;
+    margin-bottom: 10px;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+}
+
+.timer {
+  text-align: center;
+}
+
+.timer p {
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+     width: 660px;
+     max-width: 100%;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 3em;
+
+}
+
+.deck .card {
+    padding-bottom: 18%;
+    width: calc((100% /4) - 15px );
+    /* height: 125px;
+    width: 125px; */
+    margin:7px;
+    background: #2e3d49;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #02b3e4;
+    cursor: default;
+  }
+
+
+.deck .card.show {
+    font-size: 33px;
+    animation-name: showCards;
+    animation-duration: .3s;
+    animation-delay: 0 ;
+    animation-timing-function:  ease;
+    animation-iteration-count: 1 ;
+    animation-direction: alternate;
+}
+
+@keyframes showCards {
+  0% {transform: translateX(0);}
+
+50% {  transform: translateX(6px);}
+
+100% {  transform: translateX(-6px);}
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #02ccba;
+    font-size: 33px;
+    animation-name: matchCards;
+    animation-duration: .7s;
+    animation-delay: 0 ;
+    animation-iteration-count: 1 ;
+    animation-direction:  alternate;
+}
+
+@keyframes matchCards {
+5% {  transform: scale(2);}
+}
+
+.deck .card.show  i ,.deck .card.match i {
+  opacity: 1;
+  font-size: 25px;
+  align-content: center;
+  top: calc(50% - 15px);
+  position: absolute;
+  display: block;
+
+}
+
+.deck .card i {
+    opacity: 1;
+}
+
+/* Start modal-message  */
+ #modal {
+  min-width: 30%;
+  height:auto ;
+  border: 1px solid black ;
+  border-radius: 4px ;
+  background-color: #ff9393f5;
+  font-size: 18px ;
+  position: relative;
+  top: 20px;
+  padding: 15px;
+  display: none;
+  text-align: center;
+  list-style: none;
+}
+#modal h2 {
+  text-align: center;
+  color: yellow;
+  text-shadow: 4px 3px 2px black;
+  letter-spacing: 1px;
+}
+
+#modal button#playAgain {
+
+  width: 7em;
+  height: 2em;
+  background-color: yellow;
+  cursor: pointer;
+  border-radius: 2px;
+  outline: none;
+}
+
+/* End modal-message*/
