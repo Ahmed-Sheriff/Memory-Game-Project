@@ -4,7 +4,7 @@
 
 * [Instructions](#instructions)
 * [Contributing](#contributing)
-* [How to play](#How to play)
+* [How to play] (#How to play)
 
 ## Instructions
 
@@ -27,9 +27,9 @@ You have to get all cards matched to win and to see your final result
 
 - The stars rating will apply depends on your clicks count , if you opened all the cards and they were matched before 10 clicks you will have the full 3 stars badges
 
-But if your clicks number is between 10 and 15 you will got 2 stars badges
+  But if your clicks number is between 10 and 15 you will got 2 stars badges
 
-And finally if your clicks number reached to 16 and above you will got just 1 star badge that will reflect your current progress level
+  And finally if your clicks number reached to 16 and above you will got just 1 star badge that will reflect your current progress level
 
 - Moves counts increase by two opened or matched cards
 
