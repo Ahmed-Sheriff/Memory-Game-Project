@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-* How to play
+* How to play(#How to play)
 
 ## How to play
 
