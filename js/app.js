@@ -135,9 +135,9 @@ function click(){
 
     this.classList.add('open','show');
     clickedCards.push(this);
-
+     match();
   }
-  match();
+ 
 
 }
 
